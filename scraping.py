@@ -248,7 +248,7 @@ def scrape_opportunities_thread():
 def start_scraping():
     global scraping_state
     
-    # Check if scraping is already running
+    # Check if scraping is already running .
     with state_lock:
         if scraping_state["status"] == "running":
             return jsonify({"status": "error", "message": "Scraping is already in progress"}), 409
