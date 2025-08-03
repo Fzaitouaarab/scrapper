@@ -244,7 +244,7 @@ def scrape_opportunities_thread():
             driver.quit()
             print("Browser closed")
 
-@app.route("/api/v1/scraping/start", methods=["GET"])
+@app.route("/api/v1/scraping/start", methods=["POST"])
 def start_scraping():
     global scraping_state
     
